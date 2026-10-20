@@ -1,0 +1,4 @@
+- [] Github inatialaztion 
+- [] Mongodb Atlas
+- [] Rendar deployment
+- [] .env

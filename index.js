@@ -33,8 +33,6 @@ app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Routes
 app.use("/auth", authRoutes);
-// Routes
-app.use("/auth", authRoutes);
 app.use("/transactions", transactionRoutes);
 
 // Test route

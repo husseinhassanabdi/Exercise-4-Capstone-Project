@@ -14,6 +14,7 @@ import authRoutes from "./routes/authRoutes.js";
 dotenv.config();
 
 const app = express();
+app.set("trust proxy", 1);
 const PORT = process.env.PORT || 6001;
 
 // Middleware

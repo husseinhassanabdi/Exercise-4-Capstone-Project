@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #123047;
+  background: #f3f8fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --blue-900: #0c3958;
+  --blue-800: #104e73;
+  --blue-700: #12658b;
+  --blue-600: #167da2;
+  --teal-600: #17a69b;
+  --teal-100: #e4f6f3;
+  --ink: #123047;
+  --muted: #6a8192;
+  --line: #e1eaf0;
+  --surface: #ffffff;
+  --canvas: #f3f8fc;
+  --danger: #bf4e58;
+  --shadow: 0 16px 42px rgba(17, 61, 88, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: var(--blue-700);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--blue-900);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(23, 166, 155, 0.35);
+  outline-offset: 2px;
+}
+
+::selection {
+  color: white;
+  background: var(--blue-700);
+}

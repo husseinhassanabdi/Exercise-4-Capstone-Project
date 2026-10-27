@@ -155,7 +155,7 @@ router.use(protect);
 router.get("/summary/monthly", monthlySummary);
 // router.get("/monthly-summary", monthlySummary);
 router.patch("/:id", validate(transactionUpdateSchema), updateTransaction);
-// router.post("/", validate(transactionSchema), createTransaction);
+router.post("/", validate(transactionSchema), createTransaction);
 router.get("/", getTransactions);
 router.put("/:id", validate(transactionUpdateSchema), updateTransaction);
 router.delete("/:id", deleteTransaction);

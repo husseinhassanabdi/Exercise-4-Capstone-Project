@@ -3,7 +3,7 @@ node_modules/
 
 # dotenv secrets
 .env
-.env.* if you use .env.production, etc.
+.env.*
 
 # Build/output folders (optional)
 dist/

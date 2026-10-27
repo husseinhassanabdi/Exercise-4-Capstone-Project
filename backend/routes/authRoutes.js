@@ -102,6 +102,7 @@ const router = express.Router();
  *         description: Email already registered
  */
 router.post("/register", validate(registerSchema), register);
+// router.post('/register', register)
 
 /**
  * @swagger

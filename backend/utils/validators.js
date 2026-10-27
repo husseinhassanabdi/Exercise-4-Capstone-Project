@@ -20,3 +20,12 @@ export const transactionSchema = z.object({
 });
 
 export const transactionUpdateSchema = transactionSchema.partial();
+
+export const taskSchema = z.object({
+  title: z.string().trim().min(1).max(150),
+  description: z.string().trim().max(2000).optional(),
+  dueDate: z.union([z.null(), z.coerce.date()]).optional(),
+  status: z.enum(["Pending", "In Progress", "Done"]).optional(),
+});
+
+export const taskUpdateSchema = taskSchema.partial();
